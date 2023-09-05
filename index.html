@@ -18,8 +18,10 @@
             alt="logo DesignAgency"
             width="50"
             height="53"
-        /></a>
-        <p class="logo-text">Design Agency</p>
+          />
+          <p class="logo-text">Design Agency</p></a
+        >
+
         <nav class="header-nav">
           <ul class="list header-list">
             <li class="header-item">Home</li>
@@ -146,19 +148,30 @@
 
       <!-- Projects -->
 
-      <section>
-        <p>Our Portfolio</p>
-        <h2><span>Projects</span> We Have Completed</h2>
-        <ul>
-          <li><button class="button">All</button></li>
-          <li><button class="button">UI/UX</button></li>
-          <li><button class="button">Development</button></li>
-          <li><button class="button">Mobile Development</button></li>
-          <li><button class="button">SEO</button></li>
+      <section class="section projects-section">
+        <p class="projects-invite">Our Portfolio</p>
+        <h2 class="projects-title"><span>Projects</span> We Have Completed</h2>
+        <ul class="projects-list list">
+          <li class="projects-items">
+            <button class="button btn projects-btn">All</button>
+          </li>
+          <li class="projects-items">
+            <button class="button btn projects-btn">UI/UX</button>
+          </li>
+          <li class="projects-items">
+            <button class="button btn projects-btn">Development</button>
+          </li>
+          <li class="projects-items">
+            <button class="button btn projects-btn">Mobile Development</button>
+          </li>
+          <li class="projects-items">
+            <button class="button btn projects-btn">SEO</button>
+          </li>
         </ul>
         <ul>
           <li>
             <img
+              class="projects-img"
               src="./img/projects/projects-1.jpg"
               alt="work in office"
               width="374"
@@ -167,6 +180,7 @@
           </li>
           <li>
             <img
+              class="projects-img"
               src="./img/projects/projects-2.jpg"
               alt="a man wors on computer"
               width="381"
@@ -175,6 +189,7 @@
           </li>
           <li>
             <img
+              class="projects-img"
               src="./img/projects/projects-3.jpg"
               alt="laptops in office"
               width="374"
@@ -185,36 +200,38 @@
       </section>
 
       <!-- Customer -->
-      <section>
-        <p>Customer <span>Feedback</span></p>
-        <h2>What Our <span>Customer</span> Say About Us</h2>
-        <ul>
-          <li>
-            <svg class="" width="48" height="48">
+      <section class="section customer-section">
+        <p class="customer-invite">Customer <span>Feedback</span></p>
+        <h2 class="customer-title">
+          What Our <span>Customer</span> Say About Us
+        </h2>
+        <ul class="customer-list list">
+          <li class="customer-item">
+            <svg class="customer-item-svg" width="48" height="48">
               <use href="./img/icons/all-icons.svg#icon-customer-star"></use>
             </svg>
-            <h3>Name Here</h3>
-            <p>
+            <h3 class="customer-second-title">Name Here</h3>
+            <p class="customer-descrb">
               Lorem ipsum dolor sit amet consectetur. Nisi ullamcorper tincidunt
               odio arcu id praesent vitae. Facilisis vitae fringilla donec
             </p>
           </li>
-          <li>
-            <svg class="" width="48" height="48">
+          <li class="customer-item">
+            <svg class="customer-item-svg" width="48" height="48">
               <use href="./img/icons/all-icons.svg#icon-customer-star"></use>
             </svg>
-            <h3>Name Here</h3>
-            <p>
+            <h3 class="customer-second-title">Name Here</h3>
+            <p class="customer-descrb">
               Lorem ipsum dolor sit amet consectetur. Nisi ullamcorper tincidunt
               odio arcu id praesent vitae. Facilisis vitae fringilla donec
             </p>
           </li>
-          <li>
-            <svg class="" width="48" height="48">
+          <li class="customer-item">
+            <svg class="customer-item-svg" width="48" height="48">
               <use href="./img/icons/all-icons.svg#icon-customer-star"></use>
             </svg>
-            <h3>Name Here</h3>
-            <p>
+            <h3 class="customer-second-title">Name Here</h3>
+            <p class="customer-descrb">
               Lorem ipsum dolor sit amet consectetur. Nisi ullamcorper tincidunt
               odio arcu id praesent vitae. Facilisis vitae fringilla donec
             </p>
@@ -224,43 +241,171 @@
 
       <!-- Contact Us -->
 
-      <p>Contact Us</p>
-      <h2><span>Contact</span> Us & We Can Work Together</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur. Adipiscing nisl id at arcu enim
-        id gravida pulvinar. Tristique consectetur mi curabitur congue enim
-        dignissim
-      </p>
-      <form name="order_form" autocomplete="on">
-        <input
-          class="form-input"
-          type="text"
-          required
-          minlength="3"
-          maxlength="12"
-          name="user_name"
-          id="user_name"
-          placeholder="Your name"
-        />
-        <input
-          class="form-input"
-          type="email"
-          id="user_email"
-          required
-          name="user_email"
-          placeholder="Your email"
-          minlength="3"
-        />
-        <textarea
-          class=""
-          name="message"
-          id=""
-          cols="30"
-          rows="10"
-          placeholder="Your Message"
-        ></textarea>
-      </form>
+      <section class="section contactus-section">
+        <p class="contactus-invite">Contact Us</p>
+        <h2 class="contactus-title">
+          <span>Contact</span> Us & We Can Work Together
+        </h2>
+        <p class="contactus-text">
+          Lorem ipsum dolor sit amet consectetur. Adipiscing nisl id at arcu
+          enim id gravida pulvinar. Tristique consectetur mi curabitur congue
+          enim dignissim
+        </p>
+        <form class="contactus-form" name="order_form" autocomplete="on">
+          <input
+            class="contactus-form-input"
+            type="text"
+            required
+            minlength="3"
+            maxlength="12"
+            name="user_name"
+            id="user_name"
+            placeholder="Your name"
+          />
+          <input
+            class="contactus-form-input"
+            type="email"
+            id="user_email"
+            required
+            name="user_email"
+            placeholder="Your email"
+            minlength="3"
+          />
+          <textarea
+            class="contactus-form-textarea"
+            name="message"
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="Your Message"
+          ></textarea>
+          <button class="submit btn contactus-btn">Submit Message</button>
+        </form>
+      </section>
     </main>
-    <footer></footer>
+    <footer class="section footer-section">
+      <a class="logo" href="./index.html"
+        ><img
+          src="./img/hero/hero.svg"
+          alt="logo DesignAgency"
+          width="50"
+          height="53"
+        />
+        <p class="logo-text">Design Agency</p></a
+      >
+      <p class="footer-text">
+        Lorem ipsum dolor sit amet consectetur. Scelerisque vitae et vitae
+        suspendisse vulputate vestibulum tortor nisl cursus. Egestas nulla in
+      </p>
+      <ul class="list footer-social-list">
+        <li class="footer-social-item">
+          <a
+            class="footer-social-link"
+            href="https://www.facebook.com/goITclub/"
+            ><svg class="footer-social-svg" width="36" height="36">
+              <use href="./img/icons/all-icons.svg#icon-facebook"></use></svg
+          ></a>
+        </li>
+        <li class="footer-social-item">
+          <a
+            class="footer-social-link"
+            href="https://www.instagram.com/goitclub/"
+            ><svg class="footer-social-svg" width="36" height="36">
+              <use href="./img/icons/all-icons.svg#icon-instagram"></use></svg
+          ></a>
+        </li>
+        <li class="footer-social-item">
+          <a class="footer-social-link" href="https://www.youtube.com/c/GoIT"
+            ><svg class="footer-social-svg" width="36" height="36">
+              <use href="./img/icons/all-icons.svg#icon-twitter"></use></svg
+          ></a>
+        </li>
+        <li class="footer-social-item">
+          <a class="footer-social-link" href="https://www.youtube.com/c/GoIT"
+            ><svg class="footer-social-svg" width="36" height="36">
+              <use href="./img/icons/all-icons.svg#icon-linkedin"></use></svg
+          ></a>
+        </li>
+      </ul>
+      <!-- Services footer list -->
+      <ul class="list services-footer-list">
+        <li class="services-footer-item">
+          <a class="link services-footer-link" href="">Services</a>
+        </li>
+        <li class="services-footer-item">
+          <a class="link services-footer-link" href="">UI/UX</a>
+        </li>
+        <li class="services-footer-item">
+          <a class="link services-footer-link" href="">Website Dev</a>
+        </li>
+        <li class="services-footer-item">
+          <a class="link services-footer-link" href="">Mobile Dev</a>
+        </li>
+        <li class="services-footer-item">
+          <a class="link services-footer-link" href="">SEO</a>
+        </li>
+      </ul>
+
+      <!-- Resources footer list -->
+      <ul class="list resources-footer-list">
+        <li class="resources-footer-item">
+          <a class="resources-footer-link link" href="">Resources</a>
+        </li>
+        <li class="resources-footer-item">
+          <a class="resources-footer-link link" href="">Compliance</a>
+        </li>
+        <li class="resources-footer-item">
+          <a class="resources-footer-link link" href="">Case Studies</a>
+        </li>
+        <li class="resources-footer-item">
+          <a class="resources-footer-link link" href="">Webinars</a>
+        </li>
+        <li class="resources-footer-item">
+          <a class="resources-footer-link link" href="">Developers</a>
+        </li>
+      </ul>
+
+      <!-- Contact footer list -->
+
+      <ul class="list contact-footer-list">
+        <li class="contact-footer-item">
+          <a class="link contact-footer-link" href="">Contact Information</a
+          >Contact Information
+        </li>
+        <li class="contact-footer-item">
+          <a
+            class="link contact-footer-link"
+            href="mailto:canvaslancer@gmail.com"
+            >canvaslancer@gmail.com</a
+          >
+        </li>
+        <li>
+          <a class="link contact-footer-link" href="tel:+00012345678"
+            >+00012345678</a
+          >
+        </li>
+        <li class="contact-footer-item">
+          <a
+            class="link contact-footer-link"
+            href="https://winnipeg.funparkcanada.ca"
+            >Lorem Ipsum Dummy text</a
+          >
+        </li>
+      </ul>
+      <p class="footer-rights-text">
+        Copyright ⓒ Design Agency, 2023. All rights reserved.
+      </p>
+      <ul class="list policy-list">
+        <li class="policy-item">
+          <a class="policy-link link" href="">Website Terms</a>
+        </li>
+        <li class="policy-item">
+          <a class="policy-link link" href="">Privacy Policy</a>
+        </li>
+        <li class="policy-item">
+          <a class="policy-link link" href="">Cookies Policy</a>
+        </li>
+      </ul>
+    </footer>
   </body>
 </html>
